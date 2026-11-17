@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven | Book Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle">
+
+    <div class="page-wrapper">
+        <header>
+            <a href="index.html" class="logo">BookHaven.</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html" class="active">Catalog</a></li>
+                    <li><a href="book-details.html">Book Details</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">Shopping Cart <span class="cart-count empty">0</span></a></li>
+                    <li><a href="track-order.html" class="track-link">Track Order</a></li>
+                    <li><label for="theme-toggle" class="theme-btn">Switch Theme</label></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">Book Catalog</h2>
+
+            <input type="radio" name="category" id="filter-all" class="filter-radios" checked>
+            <input type="radio" name="category" id="filter-prog" class="filter-radios">
+            <input type="radio" name="category" id="filter-scifi" class="filter-radios">
+            <input type="radio" name="category" id="filter-self" class="filter-radios">
+
+            <div class="catalog-controls">
+                <div class="search-box">
+                    <input type="text" id="book-search" placeholder="Search by book title or author..." autocomplete="off">
+                    <button type="button" id="search-btn" class="btn-primary" style="padding: 0.7rem 1.2rem;">Search</button>
+                </div>
+
+                <div class="filter-labels">
+                    <label for="filter-all">All Books</label>
+                    <label for="filter-prog">Programming</label>
+                    <label for="filter-scifi">Sci-Fi</label>
+                    <label for="filter-self">Self-Development</label>
+                </div>
+            </div>
+
+            <div class="books-grid" id="catalog-grid"></div>
+
+            <p id="no-results" class="no-results" hidden>No books found.</p>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 BookHaven Online Bookstore System. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="bookhaven.js"></script>
+</body>
+</html>

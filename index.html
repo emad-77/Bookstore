@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle">
+
+    <div class="page-wrapper">
+        <header>
+            <a href="index.html" class="logo">BookHaven.</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="book-details.html">Book Details</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">Shopping Cart <span class="cart-count empty">0</span></a></li>
+                    <li><a href="track-order.html" class="track-link">Track Order</a></li>
+                    <li><label for="theme-toggle" class="theme-btn">Switch Theme</label></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Discover Your Next <span>Great Read</span></h1>
+                <p>Browse curated bestsellers, technical masterpieces, and timeless classics with instant availability tracking.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="catalog.html" class="btn-primary">Explore Catalog</a>
+                    <a href="book-details.html" id="featured-link" class="btn-outline">Featured Book Details</a>
+                </div>
+            </section>
+
+            <section class="features-bar">
+                <div class="feature-item">
+                    <h3>Fast Delivery</h3>
+                    <p>Get your favorite books delivered to your doorstep within 48 hours.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Live Inventory</h3>
+                    <p>Real-time stock availability on every title in our catalog.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Curated Selection</h3>
+                    <p>Handpicked titles across programming, fiction, and self-growth.</p>
+                </div>
+            </section>
+
+            <div class="section-header">
+                <h2 class="section-title">Trending Books</h2>
+                <a href="catalog.html" style="color: #e11d48; font-weight: 600; text-decoration: none;">View All &rarr;</a>
+            </div>
+
+            <div class="books-grid" id="trending-grid"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 BookHaven Online Bookstore System. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="bookhaven.js"></script>
+</body>
+</html>
